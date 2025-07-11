@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}
+HOME
+{% endblock title %}
+
+{% block content %}
+
+<div style="height: 100vh; margin: 0; background-image: url('https://tutor.hix.ai/cdn/public/images/tutorgpt/child-bg.jpg'); background-size: cover; background-position: center;">
+
+  <!-- Gradient Overlay -->
+  <div class="d-flex justify-content-center align-items-center vh-100" style="background: linear-gradient(to right, #0f2027, #203a43, #2c5364, 0.8);">
+
+    <div class="text-center text-white">
+      <h1 class="display-3 fw-bold mb-4">
+        Solve <span class="text-warning">Math</span> With Us
+      </h1>
+      <a href="{% url 'create_new_account'%}" class="btn btn-light btn-lg text-dark fw-bold shadow">Create New Account</a>
+    </div>
+
+  </div>
+</div>
+
+{% endblock content %}
